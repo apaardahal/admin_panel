@@ -3,7 +3,7 @@ import './widgetlarge.css'
 export default function WidgetLarge() {
 
     const Button = ({type}) =>{
-        return <button className = {"widgetLgButton" + type}>{type}</button>
+        return <button className = {"widgetLgButton " + type}>{type}</button>
     }
 
     return (
@@ -15,6 +15,33 @@ export default function WidgetLarge() {
                      <th className = "widgetLgTh">Date</th>
                      <th className = "widgetLgTh">Amount</th>
                      <th className = "widgetLgTh">Status</th>
+                 </tr>
+                 <tr className = "widgetLgTr">
+                     <td className = "widgetLgUser">
+                         <img src = "/assets/apaar.jpg" className = "widgetLgImg"/>
+                         <span className = "widgetLgName">Apaar Dahal</span>
+                     </td>
+                     <td className = "widgetLgDate">16 Feb 2020 </td>
+                     <td className = "widgetLgAmount">$5000 </td>
+                     <td className = "widgetLgStatus"> <Button type = "Approved"/></td>
+                 </tr>
+                 <tr className = "widgetLgTr">
+                     <td className = "widgetLgUser">
+                         <img src = "/assets/apaar.jpg" className = "widgetLgImg"/>
+                         <span className = "widgetLgName">Apaar Dahal</span>
+                     </td>
+                     <td className = "widgetLgDate">16 Feb 2020 </td>
+                     <td className = "widgetLgAmount">$5000 </td>
+                     <td className = "widgetLgStatus"> <Button type = "Declined"/></td>
+                 </tr>
+                 <tr className = "widgetLgTr">
+                     <td className = "widgetLgUser">
+                         <img src = "/assets/apaar.jpg" className = "widgetLgImg"/>
+                         <span className = "widgetLgName">Apaar Dahal</span>
+                     </td>
+                     <td className = "widgetLgDate">16 Feb 2020 </td>
+                     <td className = "widgetLgAmount">$5000 </td>
+                     <td className = "widgetLgStatus"> <Button type = "Pending"/></td>
                  </tr>
                  <tr className = "widgetLgTr">
                      <td className = "widgetLgUser">
